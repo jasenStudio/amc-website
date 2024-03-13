@@ -1,0 +1,24 @@
+# Archivos y directorios generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Directorios específicos
+/node_modules
+/vendor
+/dist
+/build
+/assets/pdf/
+
+# Archivos de configuración
+.env
+
+# Archivos generados durante el desarrollo
+*.log
+*.log.*
+npm-debug.log*
+
+# Archivos de respaldo y temporales
+*~
+*.swp
+
+# Dependiendo de tu entorno, también puedes incluir otros archivos y directorios específicos a tu proyecto.

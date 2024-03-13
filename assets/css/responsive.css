@@ -1,0 +1,216 @@
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+/* cuando sea Mayor o igual 1025 min-width  */
+/* cuando sear menor o igual 1280 max-width */
+
+
+/*
+@media (min-width: 400px) and (max-width: 800px) { ... } ANTES 
+¿Cómo escribiríamos esto con la sintaxis de nivel 4?. Pues siguiendo lo que hemos estado viendo, sería algo asi:
+
+@media (width >= 400px) and (width <= 800px) { ... } AHORA
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+
+    .banner-title h2 {
+        font-size:35px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+
+    .question-title {
+        font-size: 30px !important;
+    }
+
+    img {
+     
+        width: 100%;
+    }
+
+    .display-none {
+      display: none !important;
+    }
+    
+    /*Swipper*/
+    .h-screen-swipper{
+      height: 40dvh !important;
+    }
+      .title-swipper{
+        font-size: 20px !important;
+        width: 300px !important;
+      }
+    .swipper__position .title-swipper {
+     left:0 !important
+    } 
+
+    .swipper__position .text {
+display: none;
+    }
+
+    .order-vision{
+      order:1 !important
+    }
+
+    .order-vision-two{
+      order:2 !important
+    }
+
+    .d-logo{
+      display: none;
+    }
+}
+
+
+  /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .title-swipper{
+    font-size: 20px !important;
+    width: 300px !important;
+  }
+  .swipper__position .title-swipper {
+  left:0 !important
+  } 
+  
+    /* CSS */
+    .swipper__position .text {
+      display: none;
+    }
+
+    .d-logo{
+      display: none;
+    }
+
+
+  }
+
+
+
+
+
+  /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    .h-screen-swipper{
+      height: 100dvh !important;
+    }
+
+
+    .title-swipper {
+      line-height: 1.75rem;
+    }
+
+    .title-swipper span{
+      font-size: 20px !important;
+      width: 700px !important;
+    }
+
+    .swipper__position .title-swipper, .swipper__position .text {
+      left:10px !important
+    } 
+
+    .d-logo{
+      display: none;
+    }
+    
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+  .title-swipper {
+    line-height: 1.75rem;
+  }
+
+  .swipper__position .title-swipper, .swipper__position .text {
+    left:30px !important
+  } 
+
+
+  .d-logo{
+    display: none;
+  }
+
+}  
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    /* CSS */
+    .title-swipper {
+      line-height: 1.75rem;
+    }
+
+    .title-swipper span{
+      font-size: 30px !important;
+    }
+
+    .text p{
+      font-size: 25px !important;
+    }
+
+    .d-logo-movil{
+      display: none;
+    }
+
+
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+
+    .title-swipper {
+      line-height: 2rem;
+    }
+
+    .bg-swipper-opacity  .title-swipper{
+      width: 750px;
+    }
+
+    .title-swipper span{
+      font-size: 30px !important;
+    }
+
+    .text p{
+      font-size: 25px !important;
+    }
+
+    .d-logo-movil{
+      display: none;
+    }
+
+  }
